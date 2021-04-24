@@ -44,7 +44,7 @@ Tabela de conteúdos
 
 ## 💻 Sobre o projeto
 
-🍝 Inmana - é uma forma de melhorar o gerenciamento dos alimentos utilizados pelo restaurante, através do cadastro dos suplimentos em estoque conforme são utilizados, é possível monitorar a data de vencimento dos alimentos conforme descrito na etiqueta da *Anvisa*.
+🍝 Inmana - é uma forma de melhorar o gerenciamento dos alimentos utilizados pelo restaurante, através do cadastro dos suprimentos em estoque conforme são utilizados, é possível monitorar a data de vencimento dos alimentos conforme descrito na etiqueta da *Anvisa*.
 
 Projeto desenvolvido durante a **NLW - Next Level Week 5** oferecida pela [Rocketseat](https://blog.rocketseat.com.br).
 O NLW é uma experiência online com muito conteúdo prático, desafios e hacks onde o conteúdo fica disponível durante uma semana.
@@ -59,7 +59,7 @@ O NLW é uma experiência online com muito conteúdo prático, desafios e hacks 
 
 - [x] Os restaurantes que tem acesso a plataforma podem:
   - [x] Cadastrar suprimentos informando:
-    - [x] Descrição do suprimento (exemplo molho de tomate 2 Litros).
+    - [x] Descrição do suprimento (exemplo molho de tomate 2 litros).
     - [x] Data de vencimento.
     - [x] E nome do responsável pela manipulação.
   - [x] Navegar pelo sistema para verificar/atualizar/remover os suprimentos cadastrados.
@@ -69,7 +69,8 @@ O NLW é uma experiência online com muito conteúdo prático, desafios e hacks 
 
 ## 🚀 Como executar o projeto
 
-Este projeto foi desenvolvido utilizando APIs REST.
+Este projeto foi desenvolvido utilizando a linguagem **Elixir** em conjunto como o web framework **Phoenix** expondo APIs REST.
+
 ### Pré-requisitos
 
 Antes de começar, você vai precisar ter instalado em sua máquina as seguintes ferramentas:
