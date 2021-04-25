@@ -21,4 +21,12 @@ defmodule InmanaWeb.RestaurantsController do
       |> render("show.json", restaurant: restaurant)
     end
   end
+
+  def index(conn, _params) do
+    with {:ok, restaurants} <- Inmana.get_restaurants() do
+      conn
+      |> put_status(:ok)
+      |> render("index.json", restaurants: restaurants)
+    end
+  end
 end

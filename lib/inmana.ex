@@ -8,11 +8,13 @@ defmodule Inmana do
   """
   alias Inmana.Restaurants.Create, as: RestaurantCreate
   alias Inmana.Restaurants.Get, as: RestaurantGet
+  alias Inmana.Restaurants.Index, as: RestaurantIndex
   alias Inmana.Supplies.Create, as: SupplyCreate
   alias Inmana.Supplies.Get, as: SupplyGet
 
   defdelegate create_restaurant(params), to: RestaurantCreate, as: :call
   defdelegate get_restaurant(params), to: RestaurantGet, as: :call
+  defdelegate get_restaurants(), to: RestaurantIndex, as: :call
   defdelegate create_supply(params), to: SupplyCreate, as: :call
   defdelegate get_supply(params), to: SupplyGet, as: :call
 end

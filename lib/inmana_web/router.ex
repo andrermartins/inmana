@@ -10,9 +10,7 @@ defmodule InmanaWeb.Router do
 
     get "/", WelcomeControler, :index
 
-    post "/restaurants", RestaurantsController, :create
-
-    get "/restaurants/:id", RestaurantsController, :show
+    resources "/restaurants", RestaurantsController, only: [:create, :show, :index]
 
     resources "/supplies", SuppliesController, only: [:create, :show]
   end

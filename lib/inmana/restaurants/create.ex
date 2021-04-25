@@ -8,6 +8,6 @@ defmodule Inmana.Restaurants.Create do
     |> handle_insert()
   end
 
-  def handle_insert({:ok, %Restaurant{}} = result), do: result
-  def handle_insert({:error, result}), do: {:error, %{result: result, status: :bad_request}}
+  defp handle_insert({:ok, %Restaurant{}} = result), do: result
+  defp handle_insert({:error, result}), do: {:error, %{result: result, status: :bad_request}}
 end
