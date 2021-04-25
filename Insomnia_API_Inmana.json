@@ -1,0 +1,148 @@
+{
+	"_type": "export",
+	"__export_format": 3,
+	"__export_date": "2021-04-25T14:04:49.420Z",
+	"__export_source": "insomnia.desktop.app:v6.3.2",
+	"resources": [
+		{
+			"_id": "wrk_da9af6e0e1a841e1bdc239639c7a40d4",
+			"created": 1619019218843,
+			"description": "",
+			"modified": 1619019218843,
+			"name": "Inmana",
+			"parentId": null,
+			"_type": "workspace"
+		},
+		{
+			"_id": "env_5526e6f88a6449e9b863066a54bbf406",
+			"color": null,
+			"created": 1619019218866,
+			"data": {},
+			"isPrivate": false,
+			"metaSortKey": 1619019218866,
+			"modified": 1619019218866,
+			"name": "New Environment",
+			"parentId": "wrk_da9af6e0e1a841e1bdc239639c7a40d4",
+			"_type": "environment"
+		},
+		{
+			"_id": "jar_53277079bee84e87ac98872522505536",
+			"cookies": [],
+			"created": 1619019218871,
+			"modified": 1619019218871,
+			"name": "Default Jar",
+			"parentId": "wrk_da9af6e0e1a841e1bdc239639c7a40d4",
+			"_type": "cookie_jar"
+		},
+		{
+			"_id": "req_e4c887576db847b6b7e2fff66029ecfa",
+			"authentication": {},
+			"body": {
+				"mimeType": "application/json",
+				"text": "{\n\t\"name\": \"Restaurante Moita\",\n\t\"email\": \"teste@gmail.com\"\n}\t"
+			},
+			"created": 1619019303580,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_c8aa198f5dad4aa99e16c51852246359",
+					"name": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1619317874825,
+			"method": "POST",
+			"modified": 1619358905287,
+			"name": "Create Restaurant",
+			"parameters": [],
+			"parentId": "wrk_da9af6e0e1a841e1bdc239639c7a40d4",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "http://localhost:4000/api/restaurants",
+			"_type": "request"
+		},
+		{
+			"_id": "req_68987643f93644caaf1f04abacfe8f84",
+			"authentication": {},
+			"body": {
+				"mimeType": "application/json",
+				"text": "{\n\t\"description\": \"Tomate Italiano\",\n\t\"expiration_date\": \"2021-04-22\",\n\t\"responsable\": \"Zenildo\",\n\t\"restaurant_id\": \"58ffc575-8858-4170-8b4f-1e6651365044\"\n}\t"
+			},
+			"created": 1619032746623,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_4a04786701334460a03b5dd80b68a845",
+					"name": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1619032746623,
+			"method": "POST",
+			"modified": 1619044618175,
+			"name": "Create Supply",
+			"parameters": [],
+			"parentId": "wrk_da9af6e0e1a841e1bdc239639c7a40d4",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "http://localhost:4000/api/supplies",
+			"_type": "request"
+		},
+		{
+			"_id": "req_b8a17ed49dbd4202890b450f5a8fbc01",
+			"authentication": {},
+			"body": {},
+			"created": 1619034248345,
+			"description": "",
+			"headers": [],
+			"isPrivate": false,
+			"metaSortKey": -1619032746573,
+			"method": "GET",
+			"modified": 1619358914029,
+			"name": "Show Supply",
+			"parameters": [],
+			"parentId": "wrk_da9af6e0e1a841e1bdc239639c7a40d4",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "http://localhost:4000/api/supplies/f66bb8c5-088a-459d-bcfc-d2b280f55081",
+			"_type": "request"
+		},
+		{
+			"_id": "req_063672851ab640dd99b7d1eb2cb37605",
+			"authentication": {},
+			"body": {},
+			"created": 1619317874774,
+			"description": "",
+			"headers": [],
+			"isPrivate": false,
+			"metaSortKey": -1619317874775,
+			"method": "GET",
+			"modified": 1619317958661,
+			"name": "Show Restaurant",
+			"parameters": [],
+			"parentId": "wrk_da9af6e0e1a841e1bdc239639c7a40d4",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "http://localhost:4000/api/restaurants/fa500758-8881-4c0b-8b54-24b3d3c14ff0",
+			"_type": "request"
+		}
+	]
+}
